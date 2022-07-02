@@ -10,6 +10,10 @@ body {
     margin: 0;
     padding: 0;
 
+    h1 {
+        display: none;
+    }
+
     .expense-card {
         width: $mobile;
         height: 660px;

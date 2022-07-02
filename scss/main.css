@@ -6,6 +6,9 @@ body {
   margin: 0;
   padding: 0;
 }
+body h1 {
+  display: none;
+}
 body .expense-card {
   width: 375px;
   height: 660px;
