@@ -1,0 +1,240 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap");
+body {
+  background-color: #F8E9DD !important;
+  height: 100vh;
+  font-family: "DM Sans", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+body .expense-card {
+  width: 375px;
+  height: 660px;
+  margin: 0 auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+@media (min-width: 1440px) {
+  body .expense-card {
+    width: 540px;
+  }
+}
+body .expense-card__header {
+  background: #EC755D;
+  border-radius: 20px;
+  padding: 32px 26px;
+  margin-bottom: 24px;
+  margin-left: 20px;
+  margin-right: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+@media (min-width: 1440px) {
+  body .expense-card__header {
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+body .expense-card__header-title {
+  color: white;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 23px;
+}
+body .expense-card__header-value {
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 42px;
+  color: white;
+}
+body .expense-card__header-graphics {
+  display: flex;
+  position: relative;
+}
+body .expense-card__header-graphics-hallow {
+  position: absolute;
+  display: block;
+  width: 48px;
+  height: 48px;
+  border-radius: 25px;
+  outline: 2px solid white;
+  right: 24px;
+}
+body .expense-card__header-graphics-solid {
+  display: block;
+  width: 48px;
+  height: 48px;
+  border-radius: 25px;
+  background: #382314;
+}
+body .expense-card__body {
+  background-color: #FFFBF6;
+  border-radius: 20px;
+  padding: 24px 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+@media (min-width: 1440px) {
+  body .expense-card__body {
+    padding: 32px 40px;
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+body .expense-card__body-spending {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 42px;
+  color: #382314;
+  margin-bottom: 66px;
+}
+@media (min-width: 1440px) {
+  body .expense-card__body-spending {
+    font-size: 32px;
+  }
+}
+body .expense-card__body-chart ul {
+  padding: 0;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+body .expense-card__body-chart ul li {
+  text-align: center;
+  position: relative;
+}
+body .expense-card__body-chart ul li.active .expense-card__body-bar {
+  background-color: #76B5BC;
+}
+body .expense-card__body-chart ul li.active .expense-card__body-bar:hover {
+  background-color: #B4E0E5;
+}
+body .expense-card__body-chart ul li:hover .expense-card__body-bar {
+  background-color: #FF9B86;
+}
+body .expense-card__body-chart ul li:hover .expense-card__body-value {
+  display: block;
+}
+body .expense-card__body-value {
+  position: absolute;
+  display: none;
+  top: -40px;
+  text-align: center;
+  color: white;
+  background-color: #382314;
+  padding: 8px;
+  border-radius: 5px;
+  left: -10px;
+  font-size: 12px;
+}
+@media (min-width: 1440px) {
+  body .expense-card__body-value {
+    top: -46px;
+    font-size: 18px;
+    left: -5px;
+  }
+}
+body .expense-card__body-value.active {
+  display: block;
+}
+body .expense-card__body-bar {
+  border-radius: 5px;
+  background-color: #EC755D;
+  margin-bottom: 8px;
+  width: 33px;
+}
+@media (min-width: 1440px) {
+  body .expense-card__body-bar {
+    width: 50.36px;
+  }
+}
+body .expense-card__body-bar.mon {
+  height: 50px;
+}
+body .expense-card__body-bar.tue {
+  height: 100px;
+}
+body .expense-card__body-bar.wed {
+  height: 150px;
+}
+body .expense-card__body-bar.thu {
+  height: 89px;
+}
+body .expense-card__body-bar.fri {
+  height: 67px;
+}
+body .expense-card__body-bar.sat {
+  height: 124px;
+}
+body .expense-card__body-bar.sun {
+  height: 73px;
+}
+body .expense-card__body-day {
+  color: #92857A;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 20px;
+}
+body .expense-card__body-div {
+  border: 1px solid #F8E9DD;
+  margin: 30px 0;
+}
+body .expense-card__body-monthly-total {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+body .expense-card__body-total-title {
+  color: #92857A;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 20px;
+}
+@media (min-width: 1440px) {
+  body .expense-card__body-total-title {
+    font-size: 18px;
+    line-height: 23px;
+  }
+}
+body .expense-card__body-total-amount {
+  color: #382314;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 39px;
+}
+@media (min-width: 1440px) {
+  body .expense-card__body-total-amount {
+    font-size: 48px;
+    line-height: 62px;
+  }
+}
+body .expense-card__body-last {
+  text-align: right;
+}
+body .expense-card__body-last-amount {
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 20px;
+  color: #382314;
+}
+@media (min-width: 1440px) {
+  body .expense-card__body-last-amount {
+    font-size: 18px;
+    line-height: 23px;
+  }
+}
+body .expense-card__body-last-month {
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 20px;
+  color: #92857A;
+}
+@media (min-width: 1440px) {
+  body .expense-card__body-last-month {
+    font-size: 18px;
+    line-height: 23px;
+  }
+}/*# sourceMappingURL=main.css.map */

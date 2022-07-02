@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Expense Chart Component</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="scss/main.css">
+        <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+        <script src="js/expense-component.js"></script>
+    </head>
+    <body>
+        <div class="expense-card">
+            <div class="expense-card__header">
+                <div class="expense-card__header-content">
+                    <div class="expense-card__header-title">My Balance</div>
+                    <div class="expense-card__header-value">$921.48</div>
+                </div>
+                <div class="expense-card__header-graphics">
+                    <span class="expense-card__header-graphics-hallow"></span>
+                    <span class="expense-card__header-graphics-solid"></span>
+                </div>
+            </div>
+            <div class="expense-card__body">
+                <div class="expense-card__body-spending">
+                    Spending - Last 7 days
+                </div>
+                <div class="expense-card__body-chart">
+                    <ul>
+                        <li>
+                            <div class="expense-card__body-value">$17.45</div>
+                            <div class="expense-card__body-bar mon"></div>
+                            <div class="expense-card__body-day">
+                                mon
+                            </div>
+                        </li>
+                        <li>
+                            <div class="expense-card__body-value">$34.91</div>
+                            <div class="expense-card__body-bar tue"></div>
+                            <div class="expense-card__body-day">
+                                tue
+                            </div>
+                        </li>
+                        <li>
+                            <div class="expense-card__body-value">$52.36</div>
+                            <div class="expense-card__body-bar wed"></div>
+                            <div class="expense-card__body-day">
+                                wed
+                            </div>
+                        </li>
+                        <li>
+                            <div class="expense-card__body-value">$31.07</div>
+                            <div class="expense-card__body-bar thu"></div>
+                            <div class="expense-card__body-day">
+                                thu
+                            </div>
+                        </li>
+                        <li>
+                            <div class="expense-card__body-value">$23.39</div>
+                            <div class="expense-card__body-bar fri"></div>
+                            <div class="expense-card__body-day">
+                                fri
+                            </div>
+                        </li>
+                        <li>
+                            <div class="expense-card__body-value">$43.28</div>
+                            <div class="expense-card__body-bar sat"></div>
+                            <div class="expense-card__body-day">
+                                sat
+                            </div>
+                        </li>
+                        <li>
+                            <div class="expense-card__body-value">$25.48</div>
+                            <div class="expense-card__body-bar sun"></div>
+                            <div class="expense-card__body-day">
+                                sun
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="expense-card__body-div"></div>
+                <div class="expense-card__body-total-title">Total this month</div>
+                <div class="expense-card__body-monthly-total">
+                    <div class="expense-card__body-total">
+                        <div class="expense-card__body-total-amount">$478.33</div>
+                    </div>
+                    <div class="expense-card__body-last">
+                        <div class="expense-card__body-last-amount">+2.4%</div>
+                        <div class="expense-card__body-last-month">from last month</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
