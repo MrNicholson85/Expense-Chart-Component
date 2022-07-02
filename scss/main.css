@@ -134,7 +134,7 @@ body .expense-card__body-value {
   body .expense-card__body-value {
     top: -46px;
     font-size: 18px;
-    left: -5px;
+    left: -8px;
   }
 }
 body .expense-card__body-value.active {
